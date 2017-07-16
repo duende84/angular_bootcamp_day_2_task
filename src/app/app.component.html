@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<h2>By {{author}}</h2>
+<div>
+  <h2>Before Format</h2>
+  <div *ngFor="let package of packages">{{package}}</div>
+</div>
+<div>
+  <h2>After Format</h2>
+  <div *ngFor="let package of packages" [appHover]="'40px'">{{package | formatter}}</div>
+</div>
